@@ -27,8 +27,8 @@ class BooksController < ApplicationController
     else
       @book = Book.create(params)
       @book.title = params[:book_title]
-      @book.author = params[:author]
-      @book.blurb = params[:blurb]
+      @book.author = params[:book_author]
+      @book.blurb = params[:book_blurb]
       @book.user_id = session[:user_id]
       @book.save
 
