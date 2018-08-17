@@ -75,7 +75,7 @@ class TweetsController < ApplicationController
     end
   end
 
-  #DELETE TWEETS
+  #DELETE BOOKS
     post '/books/:id/delete' do
       if logged_in?
         @book = Book.find(params[:id])
