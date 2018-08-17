@@ -1,4 +1,4 @@
-class AddUseridColumnToBooks < ActiveRecord::Base
+class AddUseridColumnToBooks < ActiveRecord::Migration
   def change
     add_column :books, :user_id, :integer
   end
