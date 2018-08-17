@@ -79,8 +79,8 @@ class BooksController < ApplicationController
     post '/books/:id/delete' do
       if logged_in?
         @book = Book.find(params[:id])
-        if @Book && @Book.user_id == session[:user_id]
-          @Book.delete
+        if @book && @book.user_id == session[:user_id]
+          @book.delete
           flash[:message] = "You've successfully deleted your Book!"
           redirect :'/books'
         else
