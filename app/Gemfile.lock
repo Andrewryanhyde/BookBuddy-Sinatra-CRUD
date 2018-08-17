@@ -115,7 +115,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  activerecord (= 4.2.5)
+  activerecord (= 5.2.1)
   bcrypt
   capybara
   database_cleaner!
