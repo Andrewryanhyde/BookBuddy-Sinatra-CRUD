@@ -8,9 +8,9 @@
 <h3><%=@book.user.username%>'s Book</h3>
 <% end %>
 
-<p><%=@Book[title]%></p>
-<p><%=@Book.author%></p>
-<p><%=@Book.blurb%></p>
+<p><%=@book.title]%></p>
+<p><%=@book.author%></p>
+<p><%=@book.blurb%></p>
 
 <!-- Edit Book -->
 <form action="/books/<%=@book.id%>/edit" method="get">
