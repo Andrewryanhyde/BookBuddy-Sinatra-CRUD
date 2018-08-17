@@ -2,7 +2,7 @@ class BooksController < ApplicationController
 
   get '/books' do
     if logged_in?
-      @books = Books.all
+      @books = Book.all
       erb :index
     else
       flash[:message] = "You must be logged in to view the books directory."
