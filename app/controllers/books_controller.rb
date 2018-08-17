@@ -48,7 +48,7 @@ class BooksController < ApplicationController
     if logged_in?
       @book = Book.find(params[:id])
       if @book && session[:user_id] == @book.user_id
-        erb :'/tweets/edit_tweet'
+        erb :'/books/edit_book'
       else
         flash[:message] = "You must be the book creater in order to edit."
         redirect :'/books'
