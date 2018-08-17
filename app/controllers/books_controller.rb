@@ -1,4 +1,4 @@
-class TweetsController < ApplicationController
+class BooksController < ApplicationController
 
   get '/books' do
     if logged_in?
