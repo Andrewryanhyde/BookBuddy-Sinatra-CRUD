@@ -26,9 +26,6 @@ class BooksController < ApplicationController
       redirect :'/books/new'
     else
       @book = Book.create(params)
-      @book[title] = params[:title]
-      @book.author = params[:author]
-      @book.blurb = params[:blurb]
       @book.user_id = session[:user_id]
       @book.save
 
